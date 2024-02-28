@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="Theme.EbsApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Ваши настройки темы основного приложения -->
+    </style>
+
+    <style name="Theme.EbsApp.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Другие настройки для SplashActivity -->
+        <item name="android:windowBackground">@drawable/logo</item>
+    </style>
+
+</resources>

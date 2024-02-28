@@ -1,0 +1,59 @@
+<!-- res/layout/activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Верхняя панель -->
+    <include layout="@layout/layout_top_bar" />
+
+
+
+
+
+        <!-- RecyclerView для отображения карточек товаров -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginBottom="50dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            />
+
+    <!-- Нижняя навигационная панель -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <!-- Кнопка навигации 1 -->
+        <Button
+            android:id="@+id/buyButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="My Cart"
+            android:textAllCaps="true"
+            android:fontFamily="@font/opensans_variable"
+            android:textColor="@color/white"
+            android:background="@color/bottom_button_color"
+            android:drawableStart="@drawable/buy_icon"
+            android:onClick="onCartButtonClick">
+        </Button>
+
+        <!-- Другие кнопки навигации -->
+
+    </LinearLayout>
+
+</RelativeLayout>
